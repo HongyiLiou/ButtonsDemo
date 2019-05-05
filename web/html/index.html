@@ -1,0 +1,1419 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" type="text/css" href="../css/main.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Italianno"/>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+  <title>180920-Dennis-按鈕Demo網頁</title>
+</head>
+<body>
+  <div class="loading" id="loading">
+    <div class="circle">
+      <div class="center">
+        <h1>Loading...</h1>
+      </div>
+      <div class="border"></div>
+    </div>
+    <h1 class="wait">Please wait a minute.</h1>
+    <div class="info"></div>
+  </div>
+  <div class="background"></div>
+  <div class="backgroundImg"></div>
+  <header id="header">
+    <div class="headerBorder" id="headerBorder"></div>
+  </header>
+  <div class="bgOutside" id="navBtn">
+    <div class="container_header">
+      <div class="border">
+        <ul class="top">
+          <div class="infoLight"></div><a>
+            <li class="navBtn buttons active" id="navButtons"><span>Buttons</span></li></a><a>
+            <li class="navBtn toggleSwitch" id="navToggleSwitch"><span>Toggle switch</span></li></a><a>
+            <li class="navBtn checkBox" id="navCheckBox"><span>Check box</span></li></a>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="allProgressBar">
+    <div class="progressBar active" id="progressBar_buttons_standard">
+      <div class="progressBarOutside">
+        <div class="progressBarInner" data-0="height: 4.67%" data-12600="height: 100%"></div>
+      </div>
+      <ul class="laftNav">
+        <li id="progressBar_standard_buttons1" data-0="opacity: 1" data-600="opacity: 0.2">1. 純 CSS3 背景動畫按鈕</li>
+        <li id="progressBar_standard_buttons2" data-0="opacity: 0.2" data-600="opacity: 1" data-1200="opacity: 0.2">2. SVG/CSS3 點擊波紋動畫按鈕 (4種類)</li>
+        <li id="progressBar_standard_buttons3" data-600="opacity: 0.2" data-1200="opacity: 1" data-1800="opacity: 0.2">3. 基於 Bootstrap Flat UI 之 3D 按鈕</li>
+        <li id="progressBar_standard_buttons4" data-1200="opacity: 0.2" data-1800="opacity: 1" data-2400="opacity: 0.2">4. CSS3 滑鼠移入特效按鈕集錦</li>
+        <li id="progressBar_standard_buttons5" data-1800="opacity: 0.2" data-2400="opacity: 1" data-3000="opacity: 0.2">5. 超友愛小圖標 3D 按紐</li>
+        <li id="progressBar_standard_buttons6" data-2600="opacity: 0.2" data-3000="opacity: 1" data-3600="opacity: 0.2">6. 3D 翻轉效果按紐</li>
+        <li id="progressBar_standard_buttons7" data-3200="opacity: 0.2" data-3700="opacity: 1" data-4200="opacity: 0.2">7. 附加點擊波紋的 Material 風格按鈕</li>
+        <li id="progressBar_standard_buttons8" data-3800="opacity: 0.2" data-4400="opacity: 1" data-4800="opacity: 0.2">8. Hover 翻轉按鈕</li>
+        <li id="progressBar_standard_buttons9" data-4400="opacity: 0.2" data-5000="opacity: 1" data-5400="opacity: 0.2">9. Hover 反光動畫按鈕</li>
+        <li id="progressBar_standard_buttons10" data-5000="opacity: 0.2" data-5600="opacity: 1" data-6200="opacity: 0.2">10. 3D 線條按鈕</li>
+        <li id="progressBar_standard_buttons11" data-5600="opacity: 0.2" data-6400="opacity: 1" data-6600="opacity: 0.2">11. 仿 Android 波紋特效按鈕</li>
+        <li id="progressBar_standard_buttons12" data-6400="opacity: 0.2" data-7000="opacity: 1" data-7200="opacity: 0.2">12. 多種好看的 hover 特效按鈕</li>
+        <li id="progressBar_standard_buttons13" data-7000="opacity: 0.2" data-7600="opacity: 1" data-7800="opacity: 0.2">13. 3D 小清新前後翻頁按鈕</li>
+        <li id="progressBar_standard_buttons14" data-7600="opacity: 0.2" data-8200="opacity: 1" data-8400="opacity: 0.2">14. 漂亮的圓角按鈕組合</li>
+        <li id="progressBar_standard_buttons15" data-8200="opacity: 0.2" data-8800="opacity: 1" data-9000="opacity: 0.2">15. 邊框線條特效按鈕</li>
+        <li id="progressBar_standard_buttons16" data-8900="opacity: 0.2" data-9500="opacity: 1" data-9700="opacity: 0.2">16. 五種滑鼠移入後展開按鈕</li>
+        <li id="progressBar_standard_buttons17" data-9500="opacity: 0.2" data-10100="opacity: 1" data-10300="opacity: 0.2">17. 很活潑的特效按鈕</li>
+        <li id="progressBar_standard_buttons18" data-10100="opacity: 0.2" data-10700="opacity: 1" data-10900="opacity: 0.2">18. 圖示漸變的按鈕</li>
+        <li id="progressBar_standard_buttons19" data-10800="opacity: 0.2" data-11400="opacity: 1" data-11600="opacity: 0.2">19. 簡單的按壓效果按鈕</li>
+        <li id="progressBar_standard_buttons20" data-11400="opacity: 0.2" data-12000="opacity: 1" data-12200="opacity: 0.2">20. 質感不錯的簡易3D按鈕</li>
+        <li id="progressBar_standard_buttons21" data-12000="opacity: 0.2" data-12600="opacity: 1" data-12800="opacity: 0.2">21. Q彈的按鈕~</li>
+      </ul>
+    </div>
+    <div class="progressBar" id="progressBar_buttons_simulation">
+      <div class="progressBarOutside">
+        <div class="progressBarInner" data-0="height: 10%" data-5600="height: 100%"></div>
+      </div>
+      <ul class="laftNav">
+        <li id="progressBar_buttons_simulation1" data-0="opacity: 1" data-600="opacity: 0.2">1. 有圖案的純 CSS3 3D 旋轉立方體按鈕</li>
+        <li id="progressBar_buttons_simulation2" data-0="opacity: 0.2" data-600="opacity: 1" data-1200="opacity: 0.2">2. CSS3 飛入與飛出提交按紐</li>
+        <li id="progressBar_buttons_simulation3" data-600="opacity: 0.2" data-1200="opacity: 1" data-1800="opacity: 0.2">3. 寫實發光彈性按紐</li>
+        <li id="progressBar_buttons_simulation4" data-1200="opacity: 0.2" data-1800="opacity: 1" data-2400="opacity: 0.2">4. 很有質感的反光按鈕</li>
+        <li id="progressBar_buttons_simulation5" data-1800="opacity: 0.2" data-2400="opacity: 1" data-3000="opacity: 0.2">5. 灰灰的按鈕</li>
+        <li id="progressBar_buttons_simulation6" data-2600="opacity: 0.2" data-3000="opacity: 1" data-3600="opacity: 0.2">6. 很像小善存的 3D 按鈕</li>
+        <li id="progressBar_buttons_simulation7" data-3200="opacity: 0.2" data-3700="opacity: 1" data-4200="opacity: 0.2">7. 很像石膏浮雕的 3D 按鈕</li>
+        <li id="progressBar_buttons_simulation8" data-3800="opacity: 0.2" data-4400="opacity: 1" data-4800="opacity: 0.2">8. 很像化學糖果的 3D 按鈕</li>
+        <li id="progressBar_buttons_simulation9" data-4400="opacity: 0.2" data-5000="opacity: 1" data-5400="opacity: 0.2">9. 掀蓋特效的 3D 按鈕</li>
+        <li id="progressBar_buttons_simulation10" data-5000="opacity: 0.2" data-5600="opacity: 1" data-6000="opacity: 0.2">10. 寫實電源按鈕</li>
+      </ul>
+    </div>
+    <div class="progressBar" id="progressBar_buttons_special">
+      <div class="progressBarOutside">
+        <div class="progressBarInner" data-0="height: 16.67%" data-6400="height: 100%"></div>
+      </div>
+      <ul class="laftNav">
+        <li id="progressBar_buttons_special1" data-0="opacity: 1" data-600="opacity: 0.2">1. 動態 CSS3 下載按鈕</li>
+        <li id="progressBar_buttons_special2" data-0="opacity: 0.2" data-600="opacity: 1" data-1200="opacity: 0.2">2. 圓形懸浮選單按鈕</li>
+        <li id="progressBar_buttons_special3" data-600="opacity: 0.2" data-1200="opacity: 1" data-1800="opacity: 0.2">3. 各種特殊 hover 特效按鈕</li>
+        <li id="progressBar_buttons_special4" data-1200="opacity: 0.2" data-1800="opacity: 1" data-2400="opacity: 0.2">4. CSS3 音量調節旋轉按鈕</li>
+        <li id="progressBar_buttons_special5" data-1800="opacity: 0.2" data-2400="opacity: 1" data-3000="opacity: 0.2">5. 很多叉叉</li>
+        <li id="progressBar_buttons_special6" data-2600="opacity: 0.2" data-3000="opacity: 1" data-3600="opacity: 0.2">6. 附加提示的 CSS3 圖示按鈕</li>
+        <li id="progressBar_buttons_special7" data-3200="opacity: 0.2" data-3700="opacity: 1" data-4200="opacity: 0.2">7. Metro 風格的圖示按鈕</li>
+        <li id="progressBar_buttons_special8" data-3800="opacity: 0.2" data-4400="opacity: 1" data-4800="opacity: 0.2">8. 純 CSS3 常用社交分享按鈕</li>
+        <li id="progressBar_buttons_special9" data-4400="opacity: 0.2" data-5000="opacity: 1" data-5400="opacity: 0.2">9. 會動的圖示按鈕</li>
+        <li id="progressBar_buttons_special10" data-5000="opacity: 0.2" data-5600="opacity: 1" data-6200="opacity: 0.2">10. 圖示/帶文字的社交分享按鈕</li>
+        <li id="progressBar_buttons_special11" data-5600="opacity: 0.2" data-6400="opacity: 1" data-6600="opacity: 0.2">11. 純 CSS3 動感發光按鈕特效</li>
+      </ul>
+    </div>
+    <div class="progressBar" id="progressBar_toggle">
+      <div class="progressBarOutside">
+        <div class="progressBarInner" data-0="height: 12.5%" data-6400="height: 100%"></div>
+      </div>
+      <ul class="laftNav">
+        <li id="progressBar_toggle1" data-0="opacity: 1" data-600="opacity: 0.2">1. 三款小清新 Toggle Switch</li>
+        <li id="progressBar_toggle2" data-0="opacity: 0.2" data-600="opacity: 1" data-1200="opacity: 0.2">2. 萌萌笑臉 Toggle Switch</li>
+        <li id="progressBar_toggle3" data-600="opacity: 0.2" data-1200="opacity: 1" data-1800="opacity: 0.2">3. Bad/Fun 表情切換開關</li>
+        <li id="progressBar_toggle4" data-1200="opacity: 0.2" data-1800="opacity: 1" data-2400="opacity: 0.2">4. 純 CSS3 寫實切換開關</li>
+        <li id="progressBar_toggle5" data-1800="opacity: 0.2" data-2400="opacity: 1" data-3000="opacity: 0.2">5. 可愛笑臉切換開關</li>
+        <li id="progressBar_toggle6" data-2600="opacity: 0.2" data-3000="opacity: 1" data-3600="opacity: 0.2">6. 多組創意 CSS3 切換開關</li>
+        <li id="progressBar_toggle7" data-3200="opacity: 0.2" data-3700="opacity: 1" data-4200="opacity: 0.2">7. 邊框會扭動的切換開關</li>
+        <li id="progressBar_toggle8" data-3800="opacity: 0.2" data-4400="opacity: 1" data-4800="opacity: 0.2">8. 很寫實的黑色開關</li>
+        <li id="progressBar_toggle9" data-4400="opacity: 0.2" data-5000="opacity: 1" data-5400="opacity: 0.2">9. 按鈕開關效果的 Radiobox</li>
+        <li id="progressBar_toggle10" data-5000="opacity: 0.2" data-5600="opacity: 1" data-6200="opacity: 0.2">10. 純 CSS3 水平控制開關</li>
+        <li id="progressBar_toggle11" data-5600="opacity: 0.2" data-6400="opacity: 1" data-6600="opacity: 0.2">11. 很寫實的純 CSS3 開關</li>
+      </ul>
+    </div>
+  </div>
+  <div class="topBtn" id="topBtn">
+    <div class="topBtnBorder"></div><span id="topBtnClick">TOP</span>
+  </div>
+  <ul class="buttonTypes" id="buttonTypes">
+    <li class="buttonsTypeBtn standard active" id="buttonsTypeBtn_standard">
+      <div class="border"></div><span>Standard</span>
+    </li>
+    <li class="buttonsTypeBtn simulation" id="buttonsTypeBtn_simulation">
+      <div class="border"></div><span>Simulation</span>
+    </li>
+    <li class="buttonsTypeBtn special" id="buttonsTypeBtn_special">
+      <div class="border"></div><span>Special</span>
+    </li>
+  </ul>
+  <div class="content_allButtons">
+    <section class="active" id="buttons_standard">
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="buttons1">
+          <div class="framework_inner" id="buttons1_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info"> 
+            <div class="textArea">
+              <h1>1. 純 CSS3 背景動畫按鈕</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/pure-css3-animated-button/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/pure-css3-animated-button.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="buttons2">
+          <div class="framework_inner" id="buttons2_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>2. SVG/CSS3 點擊波紋動畫按鈕 (4種類)</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/svg-css3-ripple-button/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/svg-css3-ripple-button.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="buttons3">
+          <div class="framework_inner" id="buttons3_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>3. 基於 Bootstrap Flat UI 之 3D 按鈕</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/flat-ui-3d-button/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/flat-ui-3d-button.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="buttons4">
+          <div class="framework_inner" id="buttons4_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>4. CSS3 滑鼠移入特效按鈕集錦</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/css3-hover-buttons/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/css3-hover-buttons.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="buttons5">
+          <div class="framework_inner" id="buttons5_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>5. 超友愛小圖標 3D 按紐</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/pure-css3-pretty-icon-button/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/pure-css3-pretty-icon-button.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="buttons6">
+          <div class="framework_inner" id="buttons6_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>6. 3D 翻轉效果按紐</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/css3-3d-hover-rotate-button/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/css3-3d-hover-rotate-button.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="buttons7">
+          <div class="framework_inner" id="buttons7_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>7. 附加點擊波紋的 Material 風格按鈕</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/css3-material-design-button/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/css3-material-design-button.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="buttons8">
+          <div class="framework_inner" id="buttons8_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>8. Hover 翻轉按鈕</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/css3-hover-rotate-button/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/css3-hover-rotate-button.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="buttons9">
+          <div class="framework_inner" id="buttons9_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>9. Hover 反光動畫按鈕</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/css3-hover-shine-button/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/css3-hover-shine-button.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="buttons10">
+          <div class="framework_inner" id="buttons10_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>10. 3D 線條按鈕</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/css3-3d-line-button/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/css3-3d-line-button.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="buttons11">
+          <div class="framework_inner" id="buttons11_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>11. 仿 Android 波紋特效按鈕</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/css3-ripple-button/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/css3-ripple-button.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="buttons12">
+          <div class="framework_inner" id="buttons12_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>12. 多種好看的 hover 特效按鈕</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/pure-css3-button-animation/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/pure-css3-button-animation.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="buttons13">
+          <div class="framework_inner" id="buttons13_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>13. 3D 小清新前後翻頁按鈕</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/css3-3d-pre-next-buttons/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/css3-3d-pre-next-buttons.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="buttons14">
+          <div class="framework_inner" id="buttons14_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>14. 漂亮的圓角按鈕組合</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/pure-css3-rounded-button/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/pure-css3-rounded-button.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="buttons15">
+          <div class="framework_inner" id="buttons15_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>15. 邊框線條特效按鈕</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/css3-line-button/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/css3-line-button.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="buttons16">
+          <div class="framework_inner" id="buttons16_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>16. 五種滑鼠移入後展開按鈕</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/css3-animation-button-5-styles/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/css3-animation-button-5-styles.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="buttons17">
+          <div class="framework_inner" id="buttons17_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>17. 很活潑的滑入特效按鈕</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/css3-slide-button-animation/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/css3-slide-button-animation.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="buttons18">
+          <div class="framework_inner" id="buttons18_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>18. 圖示漸變的按鈕</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/jiaoben260/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/jiaoben260.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="buttons19">
+          <div class="framework_inner" id="buttons19_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>19. 簡單的按壓效果按鈕</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/css3-3d-button-color-size/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/css3-3d-button-color-size.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="buttons20">
+          <div class="framework_inner" id="buttons20_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>20. 質感不錯的簡易3D按鈕</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/css3-simple-3d-button/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/css3-simple-3d-button.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="buttons21">
+          <div class="framework_inner" id="buttons21_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>21. Q彈的按鈕~</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/css3-gelatin-button/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/css3-gelatin-button.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="buttons_simulation">
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="simulation1">
+          <div class="framework_inner" id="simulation1_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>1. 有圖案的純 CSS3 3D 旋轉立方體按鈕</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/pure-css3-3d-cube-link/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/pure-css3-3d-cube-link.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="simulation2">
+          <div class="framework_inner" id="simulation2_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>2. CSS3 飛入與飛出提交按紐</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/css3-button-animation/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/css3-button-animation.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="simulation3">
+          <div class="framework_inner" id="simulation3_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>3. 寫實發光彈性按紐</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/css3-3d-button-elasticity/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/css3-3d-button-elasticity.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="simulation4">
+          <div class="framework_inner" id="simulation4_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>4. 很有質感的反光按鈕</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/pure-css3-texture-shine-button/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/pure-css3-texture-shine-button.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="simulation5">
+          <div class="framework_inner" id="simulation5_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>5. 灰灰的按鈕</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/css3-3d-grey-button/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/css3-3d-grey-button.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="simulation6">
+          <div class="framework_inner" id="simulation6_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>6. 很像小善存的 3D 按鈕</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/html5-css3-pretty-button/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/html5-css3-pretty-button.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="simulation7">
+          <div class="framework_inner" id="simulation7_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>7. 很像石膏浮雕的 3D 按鈕</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/css3-3d-shine-button/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/css3-3d-shine-button.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="simulation8">
+          <div class="framework_inner" id="simulation8_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>8. 很像化學糖果的 3D 按鈕</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/css3-twitter-3d-button/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/css3-twitter-3d-button.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="simulation9">
+          <div class="framework_inner" id="simulation9_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>9. 掀蓋特效的 3D 按鈕</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/css3-twitter-3d-button/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/css3-twitter-3d-button.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="simulation10">
+          <div class="framework_inner" id="simulation10_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>10. 寫實電源按鈕</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/css3-power-button/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/css3-power-button.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="buttons_special">
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="special1">
+          <div class="framework_inner" id="special1_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>1. 動態 CSS3 下載按紐</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/pure-css3-download-button/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/pure-css3-download-button.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="special2">
+          <div class="framework_inner" id="special2_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>2. 圓形懸浮選單按鈕</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/css3-hover-icon-menu/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/css3-hover-icon-menu.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="special3">
+          <div class="framework_inner" id="special3_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>3. 各種特殊 hover 特效按鈕</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/css3-hover-button-animation/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/css3-hover-button-animation.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="special4">
+          <div class="framework_inner" id="special4_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>4. CSS3 音量調節旋轉按鈕</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/css3-rotate-buttons/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/css3-rotate-buttons.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="special5">
+          <div class="framework_inner" id="special5_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>5. 很多叉叉</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/css3-close-button/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/css3-close-button.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="special6">
+          <div class="framework_inner" id="special6_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>6. 附加提示的 CSS3 圖示按鈕</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/tooltip-css3-icon/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/tooltip-css3-icon.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="special7">
+          <div class="framework_inner" id="special7_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>7. Metro 風格的圖示按鈕</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/pure-css3-metro-icon/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/pure-css3-metro-icon.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="special8">
+          <div class="framework_inner" id="special8_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>8. 純 CSS3 常用社交分享按鈕</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/pure-css3-social-buttons/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/pure-css3-social-buttons.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="special9">
+          <div class="framework_inner" id="special9_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>9. 會動的圖示按鈕</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/html5-css3-animate-icon-button/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/html5-css3-animate-icon-button.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="special10">
+          <iframe class="special10" src="https://www.html5tricks.com/demo/coded-social-icons/index.php" name="special10" scrolling="no"></iframe>
+          <div class="info">
+            <div class="textArea">
+              <h1>10. 圖示/帶文字的社交分享按鈕</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/coded-social-icons/index.php" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/coded-social-icons.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="special11">
+          <div class="framework_inner" id="special11_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>11. 純 CSS3 動感發光按鈕特效</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/pure-css3-shine-button/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/pure-css3-shine-button.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="toggleSwitch">
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="toggle1">
+          <div class="framework_inner" id="toggle1_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>1. 三款小清新 Toggle Switch</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/pure-css3-checkbox-switch/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/pure-css3-checkbox-switch.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="toggle2">
+          <div class="framework_inner" id="toggle2_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>2. 萌萌笑臉 Toggle Switch</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/pure-css3-smile-switch/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/pure-css3-smile-switch.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="toggle3">
+          <div class="framework_inner" id="toggle3_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>3. Bad/Fun 表情切換開關</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/pure-css3-face-style-switch/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/pure-css3-face-style-switch.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="toggle4">
+          <div class="framework_inner" id="toggle4_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>4. 純 CSS3 寫實切換開關</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/pure-css3-pretty-switch-button/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/pure-css3-pretty-switch-button.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="toggle5">
+          <div class="framework_inner" id="toggle5_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>5. 可愛笑臉切換開關</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/pure-css3-face-switch/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/pure-css3-face-switch.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="toggle6">
+          <div class="framework_inner" id="toggle6_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>6. 多組創意 CSS3 切換開關</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/css3-creative-switch-button/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/css3-creative-switch-button.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="toggle7">
+          <div class="framework_inner" id="toggle7_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>7. 邊框會扭動的切換開關</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/css3-toggle-switch-button/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/css3-toggle-switch-button.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="toggle8">
+          <div class="framework_inner" id="toggle8_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>8. 很寫實的黑色開關</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/pure-css3-shine-switch-button/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/pure-css3-shine-switch-button.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="toggle9">
+          <div class="framework_inner" id="toggle9_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>9. 按鈕開關效果的 Radiobox</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/css3-radio-switch-button/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/css3-radio-switch-button.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="toggle10">
+          <div class="framework_inner" id="toggle10_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>10. 純 CSS3 水平控制開關</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/pure-css3-hor-button-switch/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/pure-css3-hor-button-switch.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons1_box">
+        <div class="borderGold"></div>
+        <div class="framework" id="toggle11">
+          <div class="framework_inner" id="toggle11_inner">
+            <div class="buttonsHtml"></div>
+          </div>
+          <div class="info">
+            <div class="textArea">
+              <h1>11. 很寫實的純 CSS3 開關</h1>
+            </div>
+            <div class="bgOutside_content">
+              <div class="container_center">
+                <div class="border">
+                  <ul class="center">
+                    <div class="infoLight"></div><a href="https://www.html5tricks.com/demo/css3-3d-switch-button/index.html" target="_blank" draggable="false">
+                      <li class="contentBtn showOnline"><span>線上演示</span></li></a><a href="https://www.html5tricks.com/download/css3-3d-switch-button.rar" draggable="false">
+                      <li class="contentBtn codeDownload"><span>源碼下載</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="checkBox"></section>
+  </div>
+  <script type="text/javascript" src="../js/main.js" async="true"></script>
+</body>

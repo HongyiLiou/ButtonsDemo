@@ -1,0 +1,60 @@
+// * Basic settings */
+
+*
+    font-family: 'Italianno', cursive, '微軟正黑體'
+    box-sizing: border-box
+    user-select: none
+    ul,li
+        list-style: none
+        margin: 0
+        padding: 0
+input,button
+    border: none
+    outline: none
+html,body
+	margin: 0
+	padding: 0
+	width: 100%
+ul,li
+	list-style: none
+	margin: 0
+	padding: 0
+
+// * variable */
+$bodyheight: 13000px
+
+// * Mixins */
+@mixin clearfix()
+  &::after    
+    display: block
+    content: ""
+    clear: both
+
+@mixin ab_center
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+
+@mixin size($w,$h)
+    width: $w
+    height: $h
+
+// * Animations */
+@keyframes loading
+    0%
+        transform: rotate(0turn)
+        opacity: 1
+    25%,75%
+        opacity: 0.1
+    50%
+        opacity: 1
+    100%
+        transform: rotate(1turn)
+        opacity: 1
+
+@keyframes loading_bg
+    0%
+        opacity: 0
+    100%
+        opacity: 1
