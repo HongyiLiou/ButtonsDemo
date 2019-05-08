@@ -1,72 +1,72 @@
 $(document).ready(function(){
     setInterval(function(){
-        $('#loading').addClass('active')},1500)
+        $('#loading').addClass('active')},2000)
     
 })
 
 // 載入所有按扭頁面
 function buttons1_inner(){
-    document.getElementById('buttons1_inner').innerHTML = '<object type="text/html" data="buttons1.html" width="100%" height="100%"></object>'
+    document.getElementById('buttons1_inner').innerHTML = '<object type="text/html" data="/html/buttons1.html" width="100%" height="100%"></object>'
 }
 function buttons2_inner(){
-    document.getElementById('buttons2_inner').innerHTML = '<object type="text/html" data="buttons2_1.html" width="100%" height="100%"></object>'
+    document.getElementById('buttons2_inner').innerHTML = '<object type="text/html" data="/html/buttons2_1.html" width="100%" height="100%"></object>'
 }
 function buttons3_inner(){
-    document.getElementById('buttons3_inner').innerHTML = '<object type="text/html" data="buttons3.html" width="100%" height="100%"></object>'
+    document.getElementById('buttons3_inner').innerHTML = '<object type="text/html" data="/html/buttons3.html" width="100%" height="100%"></object>'
 }
 function buttons4_inner(){
-    document.getElementById('buttons4_inner').innerHTML = '<object type="text/html" data="buttons4.html" width="100%" height="100%"></object>'
+    document.getElementById('buttons4_inner').innerHTML = '<object type="text/html" data="/html/buttons4.html" width="100%" height="100%"></object>'
 }
 function buttons5_inner(){
-    document.getElementById('buttons5_inner').innerHTML = '<object type="text/html" data="buttons5.html" width="100%" height="100%"></object>'
+    document.getElementById('buttons5_inner').innerHTML = '<object type="text/html" data="/html/buttons5.html" width="100%" height="100%"></object>'
 }
 function buttons6_inner(){
-    document.getElementById('buttons6_inner').innerHTML = '<object type="text/html" data="buttons6.html" width="100%" height="100%"></object>'
+    document.getElementById('buttons6_inner').innerHTML = '<object type="text/html" data="/html/buttons6.html" width="100%" height="100%"></object>'
 }
 function buttons7_inner(){
-    document.getElementById('buttons7_inner').innerHTML = '<object type="text/html" data="buttons7.html" width="100%" height="100%"></object>'
+    document.getElementById('buttons7_inner').innerHTML = '<object type="text/html" data="/html/buttons7.html" width="100%" height="100%"></object>'
 }
 function buttons8_inner(){
-    document.getElementById('buttons8_inner').innerHTML = '<object type="text/html" data="buttons8.html" width="100%" height="100%"></object>'
+    document.getElementById('buttons8_inner').innerHTML = '<object type="text/html" data="/html/buttons8.html" width="100%" height="100%"></object>'
 }
 function buttons9_inner(){
-    document.getElementById('buttons9_inner').innerHTML = '<object type="text/html" data="buttons9.html" width="100%" height="100%"></object>'
+    document.getElementById('buttons9_inner').innerHTML = '<object type="text/html" data="/html/buttons9.html" width="100%" height="100%"></object>'
 }
 function buttons10_inner(){
-    document.getElementById('buttons10_inner').innerHTML = '<object type="text/html" data="buttons10_1.html" width="100%" height="100%"></object>'
+    document.getElementById('buttons10_inner').innerHTML = '<object type="text/html" data="/html/buttons10_1.html" width="100%" height="100%"></object>'
 }
 function buttons11_inner(){
-    document.getElementById('buttons11_inner').innerHTML = '<object type="text/html" data="buttons11.html" width="100%" height="100%"></object>'
+    document.getElementById('buttons11_inner').innerHTML = '<object type="text/html" data="/html/buttons11.html" width="100%" height="100%"></object>'
 }
 function buttons12_inner(){
-    document.getElementById('buttons12_inner').innerHTML = '<object type="text/html" data="buttons12.html" width="100%" height="100%"></object>'
+    document.getElementById('buttons12_inner').innerHTML = '<object type="text/html" data="/html/buttons12.html" width="100%" height="100%"></object>'
 }
 function buttons13_inner(){
-    document.getElementById('buttons13_inner').innerHTML = '<object type="text/html" data="buttons13.html" width="100%" height="100%"></object>'
+    document.getElementById('buttons13_inner').innerHTML = '<object type="text/html" data="/html/buttons13.html" width="100%" height="100%"></object>'
 }
 function buttons14_inner(){
-    document.getElementById('buttons14_inner').innerHTML = '<object type="text/html" data="buttons14.html" width="100%" height="100%"></object>'
+    document.getElementById('buttons14_inner').innerHTML = '<object type="text/html" data="/html/buttons14.html" width="100%" height="100%"></object>'
 }
 function buttons15_inner(){
-    document.getElementById('buttons15_inner').innerHTML = '<object type="text/html" data="buttons15.html" width="100%" height="100%"></object>'
+    document.getElementById('buttons15_inner').innerHTML = '<object type="text/html" data="/html/buttons15.html" width="100%" height="100%"></object>'
 }
 function buttons16_inner(){
-    document.getElementById('buttons16_inner').innerHTML = '<object type="text/html" data="buttons16.html" width="100%" height="100%"></object>'
+    document.getElementById('buttons16_inner').innerHTML = '<object type="text/html" data="/html/buttons16.html" width="100%" height="100%"></object>'
 }
 function buttons17_inner(){
-    document.getElementById('buttons17_inner').innerHTML = '<object type="text/html" data="buttons17.html" width="100%" height="100%"></object>'
+    document.getElementById('buttons17_inner').innerHTML = '<object type="text/html" data="/html/buttons17.html" width="100%" height="100%"></object>'
 }
 function buttons18_inner(){
-    document.getElementById('buttons18_inner').innerHTML = '<object type="text/html" data="buttons18.html" width="100%" height="100%"></object>'
+    document.getElementById('buttons18_inner').innerHTML = '<object type="text/html" data="/html/buttons18.html" width="100%" height="100%"></object>'
 }
 function buttons19_inner(){
-    document.getElementById('buttons19_inner').innerHTML = '<object type="text/html" data="buttons19.html" width="100%" height="100%"></object>'
+    document.getElementById('buttons19_inner').innerHTML = '<object type="text/html" data="/html/buttons19.html" width="100%" height="100%"></object>'
 }
 function buttons20_inner(){
-    document.getElementById('buttons20_inner').innerHTML = '<object type="text/html" data="buttons20.html" width="100%" height="100%"></object>'
+    document.getElementById('buttons20_inner').innerHTML = '<object type="text/html" data="/html/buttons20.html" width="100%" height="100%"></object>'
 }
 function buttons21_inner(){
-    document.getElementById('buttons21_inner').innerHTML = '<object type="text/html" data="buttons21.html" width="100%" height="100%"></object>'
+    document.getElementById('buttons21_inner').innerHTML = '<object type="text/html" data="/html/buttons21.html" width="100%" height="100%"></object>'
 }
 buttons1_inner()
 buttons2_inner()
@@ -91,34 +91,34 @@ buttons20_inner()
 buttons21_inner()
 
 function simulation1_inner(){
-    document.getElementById('simulation1_inner').innerHTML = '<object type="text/html" data="simulation1.html" width="100%" height="100%"></object>'
+    document.getElementById('simulation1_inner').innerHTML = '<object type="text/html" data="/html/simulation1.html" width="100%" height="100%"></object>'
 }
 function simulation2_inner(){
-    document.getElementById('simulation2_inner').innerHTML = '<object type="text/html" data="simulation2_1.html" width="100%" height="100%"></object>'
+    document.getElementById('simulation2_inner').innerHTML = '<object type="text/html" data="/html/simulation2_1.html" width="100%" height="100%"></object>'
 }
 function simulation3_inner(){
-    document.getElementById('simulation3_inner').innerHTML = '<object type="text/html" data="simulation3.html" width="100%" height="100%"></object>'
+    document.getElementById('simulation3_inner').innerHTML = '<object type="text/html" data="/html/simulation3.html" width="100%" height="100%"></object>'
 }
 function simulation4_inner(){
-    document.getElementById('simulation4_inner').innerHTML = '<object type="text/html" data="simulation4.html" width="100%" height="100%"></object>'
+    document.getElementById('simulation4_inner').innerHTML = '<object type="text/html" data="/html/simulation4.html" width="100%" height="100%"></object>'
 }
 function simulation5_inner(){
-    document.getElementById('simulation5_inner').innerHTML = '<object type="text/html" data="simulation5.html" width="100%" height="100%"></object>'
+    document.getElementById('simulation5_inner').innerHTML = '<object type="text/html" data="/html/simulation5.html" width="100%" height="100%"></object>'
 }
 function simulation6_inner(){
-    document.getElementById('simulation6_inner').innerHTML = '<object type="text/html" data="simulation6.html" width="100%" height="100%"></object>'
+    document.getElementById('simulation6_inner').innerHTML = '<object type="text/html" data="/html/simulation6.html" width="100%" height="100%"></object>'
 }
 function simulation7_inner(){
-    document.getElementById('simulation7_inner').innerHTML = '<object type="text/html" data="simulation7.html" width="100%" height="100%"></object>'
+    document.getElementById('simulation7_inner').innerHTML = '<object type="text/html" data="/html/simulation7.html" width="100%" height="100%"></object>'
 }
 function simulation8_inner(){
-    document.getElementById('simulation8_inner').innerHTML = '<object type="text/html" data="simulation8.html" width="100%" height="100%"></object>'
+    document.getElementById('simulation8_inner').innerHTML = '<object type="text/html" data="/html/simulation8.html" width="100%" height="100%"></object>'
 }
 function simulation9_inner(){
-    document.getElementById('simulation9_inner').innerHTML = '<object type="text/html" data="simulation9.html" width="100%" height="100%"></object>'
+    document.getElementById('simulation9_inner').innerHTML = '<object type="text/html" data="/html/simulation9.html" width="100%" height="100%"></object>'
 }
 function simulation10_inner(){
-    document.getElementById('simulation10_inner').innerHTML = '<object type="text/html" data="simulation10.html" width="100%" height="100%"></object>'
+    document.getElementById('simulation10_inner').innerHTML = '<object type="text/html" data="/html/simulation10.html" width="100%" height="100%"></object>'
 }
 simulation1_inner()
 simulation2_inner()
@@ -132,34 +132,34 @@ simulation9_inner()
 simulation10_inner()
 
 function special1_inner(){
-    document.getElementById('special1_inner').innerHTML = '<object type="text/html" data="special1.html" width="100%" height="100%"></object>'
+    document.getElementById('special1_inner').innerHTML = '<object type="text/html" data="/html/special1.html" width="100%" height="100%"></object>'
 }
 function special2_inner(){
-    document.getElementById('special2_inner').innerHTML = '<object type="text/html" data="special2.html" width="100%" height="100%"></object>'
+    document.getElementById('special2_inner').innerHTML = '<object type="text/html" data="/html/special2.html" width="100%" height="100%"></object>'
 }
 function special3_inner(){
-    document.getElementById('special3_inner').innerHTML = '<object type="text/html" data="special3.html" width="100%" height="100%"></object>'
+    document.getElementById('special3_inner').innerHTML = '<object type="text/html" data="/html/special3.html" width="100%" height="100%"></object>'
 }
 function special4_inner(){
-    document.getElementById('special4_inner').innerHTML = '<object type="text/html" data="special4.html" width="100%" height="100%"></object>'
+    document.getElementById('special4_inner').innerHTML = '<object type="text/html" data="/html/special4.html" width="100%" height="100%"></object>'
 }
 function special5_inner(){
-    document.getElementById('special5_inner').innerHTML = '<object type="text/html" data="special5.html" width="100%" height="100%"></object>'
+    document.getElementById('special5_inner').innerHTML = '<object type="text/html" data="/html/special5.html" width="100%" height="100%"></object>'
 }
 function special6_inner(){
-    document.getElementById('special6_inner').innerHTML = '<object type="text/html" data="special6.html" width="100%" height="100%"></object>'
+    document.getElementById('special6_inner').innerHTML = '<object type="text/html" data="/html/special6.html" width="100%" height="100%"></object>'
 }
 function special7_inner(){
-    document.getElementById('special7_inner').innerHTML = '<object type="text/html" data="special7.html" width="100%" height="100%"></object>'
+    document.getElementById('special7_inner').innerHTML = '<object type="text/html" data="/html/special7.html" width="100%" height="100%"></object>'
 }
 function special8_inner(){
-    document.getElementById('special8_inner').innerHTML = '<object type="text/html" data="special8.html" width="100%" height="100%"></object>'
+    document.getElementById('special8_inner').innerHTML = '<object type="text/html" data="/html/special8.html" width="100%" height="100%"></object>'
 }
 function special9_inner(){
-    document.getElementById('special9_inner').innerHTML = '<object type="text/html" data="special9.html" width="100%" height="100%"></object>'
+    document.getElementById('special9_inner').innerHTML = '<object type="text/html" data="/html/special9.html" width="100%" height="100%"></object>'
 }
 function special11_inner(){
-    document.getElementById('special11_inner').innerHTML = '<object type="text/html" data="special11.html" width="100%" height="100%"></object>'
+    document.getElementById('special11_inner').innerHTML = '<object type="text/html" data="/html/special11.html" width="100%" height="100%"></object>'
 }
 special1_inner()
 special2_inner()
@@ -174,37 +174,37 @@ special9_inner()
 special11_inner()
 
 function toggle1_inner(){
-    document.getElementById('toggle1_inner').innerHTML = '<object type="text/html" data="toggle1.html" width="100%" height="100%"></object>'
+    document.getElementById('toggle1_inner').innerHTML = '<object type="text/html" data="/html/toggle1.html" width="100%" height="100%"></object>'
 }
 function toggle2_inner(){
-    document.getElementById('toggle2_inner').innerHTML = '<object type="text/html" data="toggle2.html" width="100%" height="100%"></object>'
+    document.getElementById('toggle2_inner').innerHTML = '<object type="text/html" data="/html/toggle2.html" width="100%" height="100%"></object>'
 }
 function toggle3_inner(){
-    document.getElementById('toggle3_inner').innerHTML = '<object type="text/html" data="toggle3.html" width="100%" height="100%"></object>'
+    document.getElementById('toggle3_inner').innerHTML = '<object type="text/html" data="/html/toggle3.html" width="100%" height="100%"></object>'
 }
 function toggle4_inner(){
-    document.getElementById('toggle4_inner').innerHTML = '<object type="text/html" data="toggle4.html" width="100%" height="100%"></object>'
+    document.getElementById('toggle4_inner').innerHTML = '<object type="text/html" data="/html/toggle4.html" width="100%" height="100%"></object>'
 }
 function toggle5_inner(){
-    document.getElementById('toggle5_inner').innerHTML = '<object type="text/html" data="toggle5.html" width="100%" height="100%"></object>'
+    document.getElementById('toggle5_inner').innerHTML = '<object type="text/html" data="/html/toggle5.html" width="100%" height="100%"></object>'
 }
 function toggle6_inner(){
-    document.getElementById('toggle6_inner').innerHTML = '<object type="text/html" data="toggle6.html" width="100%" height="100%"></object>'
+    document.getElementById('toggle6_inner').innerHTML = '<object type="text/html" data="/html/toggle6.html" width="100%" height="100%"></object>'
 }
 function toggle7_inner(){
-    document.getElementById('toggle7_inner').innerHTML = '<object type="text/html" data="toggle7.html" width="100%" height="100%"></object>'
+    document.getElementById('toggle7_inner').innerHTML = '<object type="text/html" data="/html/toggle7.html" width="100%" height="100%"></object>'
 }
 function toggle8_inner(){
-    document.getElementById('toggle8_inner').innerHTML = '<object type="text/html" data="toggle8.html" width="100%" height="100%"></object>'
+    document.getElementById('toggle8_inner').innerHTML = '<object type="text/html" data="/html/toggle8.html" width="100%" height="100%"></object>'
 }
 function toggle9_inner(){
-    document.getElementById('toggle9_inner').innerHTML = '<object type="text/html" data="toggle9.html" width="100%" height="100%"></object>'
+    document.getElementById('toggle9_inner').innerHTML = '<object type="text/html" data="/html/toggle9.html" width="100%" height="100%"></object>'
 }
 function toggle10_inner(){
-    document.getElementById('toggle10_inner').innerHTML = '<object type="text/html" data="toggle10.html" width="100%" height="100%"></object>'
+    document.getElementById('toggle10_inner').innerHTML = '<object type="text/html" data="/html/toggle10.html" width="100%" height="100%"></object>'
 }
 function toggle11_inner(){
-    document.getElementById('toggle11_inner').innerHTML = '<object type="text/html" data="toggle11.html" width="100%" height="100%"></object>'
+    document.getElementById('toggle11_inner').innerHTML = '<object type="text/html" data="/html/toggle11.html" width="100%" height="100%"></object>'
 }
 toggle1_inner()
 toggle2_inner()
