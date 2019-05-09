@@ -5,10 +5,10 @@ $(document).ready(function(){
 })
 
 // 載入所有按扭頁面
-// const frameworkInner = document.querySelectorAll('.framework_inner');
-// frameworkInner.forEach(function(framework){
-//     framework.innerHTML = `<div class="buttonImgs" style="background: url(/images/buttonsImg/${framework.id}.jpg)">`
-// })
+const frameworkInner = document.querySelectorAll('.framework_inner');
+frameworkInner.forEach(function(framework){
+    framework.innerHTML = `<div class="buttonImgs" style="background: url(./images/buttonsImg/${framework.id}.jpg)">`
+})
 
 // function buttons1_inner(){
 //     document.getElementById('buttons1_inner').innerHTML = '<object type="text/html" data="/html/buttons1.html" width="100%" height="100%"></object>'
