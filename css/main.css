@@ -753,6 +753,13 @@ section {
         overflow: hidden;
         width: 100%;
         height: 100%; }
+      section .framework .framework_inner .buttonImgs {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 370px;
+        background-size: cover; }
     section .framework iframe {
       position: absolute;
       display: block;
